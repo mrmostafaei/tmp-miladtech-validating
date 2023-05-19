@@ -434,7 +434,7 @@ trait ValidatingTrait
     {
         $validator = $this->makeValidator($this->getRules());
 
-        throw new ValidationException($validator, $this);
+        throw  ValidationException($validator, $this);
     }
 
     /**
